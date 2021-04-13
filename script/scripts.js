@@ -1,3 +1,5 @@
+let invalidNum = "Erro: nenhum valor digitado"
+
 function cleanDisplay(){
     let display = document.querySelector('#display');
     display.textContent = "";
@@ -7,7 +9,7 @@ function cleanDisplay(){
 function insertChar(num){
     let display = document.querySelector('#display');
 
-    if(display.textContent === "0"){
+    if(display.textContent === invalidNum){
         cleanDisplay();
     }
     display.insertAdjacentHTML('beforeend', num);
@@ -29,6 +31,6 @@ function calcular(){
         document.querySelector('#display').insertAdjacentHTML('beforeend', result);
     }else{
         cleanDisplay();
-        document.querySelector('#display').textContent = 0;
+        document.querySelector('#display').textContent = invalidNum;
     }    
 }
