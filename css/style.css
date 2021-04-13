@@ -1,0 +1,116 @@
+:root{
+    --color-button: #3D4041;
+    --color-button-hover: #242526;
+    --color-background-calc: #141516;
+    --color-body: #FDFEFE;
+}
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Zilla Slab Highlight', cursive; */
+
+body{
+    font-size: 20px;
+
+    background-color: var(--color-body); 
+}
+
+.title{
+    font-size: 4rem;
+    font-family: 'Zilla Slab Highlight', cursive;
+
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--color-background-calc);
+
+    height: 700px;
+    width: 450px;
+
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px 3px #6F7276;
+}
+
+.keys{
+    background-color: grey; 
+    width: 419px;
+
+    border-radius: 5px;
+}
+
+#display{
+    font-family: 'Roboto Mono', monospace;
+
+    text-align: right;
+    background-color: white;
+   
+
+    height: 70px;
+    width: 405px;
+
+    user-select: none;
+
+    line-height: 100px;
+    padding-right: 10px;
+
+    border-radius: 5px;
+    border-style:inset;
+
+    margin-bottom: 50px;
+}
+
+.botao-calc{
+    height: 90px;
+    width: 100px;
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    font-family: monospace;
+
+    color: white;
+    background-color: var(--color-button);
+
+    border: 0;
+}
+
+.botao-calc:hover{
+    background-color: var(--color-button-hover);
+}
+
+.botao-calc:active{
+    height: 80px;
+    width: 90px;
+    
+    font-size: 1.2rem;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+
+    color: black
+}
+
+a:hover{
+    color: red;
+}
+
+
+
+
+
